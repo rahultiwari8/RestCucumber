@@ -24,7 +24,7 @@ public class Excelop {
 		
 		File file = new File(pathofexcel);
 		FileInputStream fis =new FileInputStream(file);
-		 fos =new FileOutputStream(new File("/Users/rahultiwari/Downloads/Cucumber.RA.framework-master/RestAssured.Cucumber.Framework/target/Workbook1"));;
+		 fos =new FileOutputStream(new File("/Users/rahultiwari/git/RestCucumber/RestAssured.Cucumber.Framework/target/Workbook1.xlsx"));;
 		 wb =new XSSFWorkbook(fis);
 				
 	}
