@@ -3,6 +3,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
+        sh 'pwd'
         sh 'cd RestAssured.Cucumber.Framework'
         sh 'pwd'
         sh 'mvn clean install'
