@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'cd RestAssured.Cucumber.Framework'
+        sh 'cd /Users/rahultiwari/.jenkins/workspace/RestCucumber_master/RestAssured.Cucumber.Framework'
         sh 'pwd'
         sh 'mvn clean install'
       }
