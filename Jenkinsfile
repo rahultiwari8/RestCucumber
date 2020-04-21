@@ -5,7 +5,7 @@ pipeline {
       steps {
         sh 'cd /Users/rahultiwari/.jenkins/workspace/RestCucumber_master/RestAssured.Cucumber.Framework'
         sh 'pwd'
-        sh 'mvn clean install'
+        sh 'mvn -f RestAssured.Cucumber.Framework/pom.xml clean install'
       }
     }
 
