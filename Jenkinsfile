@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh '/Users/rahultiwari/.jenkins/workspace/RestCucumber_master'
+        sh 'cd /Users/rahultiwari/.jenkins/workspace/RestCucumber_master'
         sh 'pwd'
         sh 'mvn clean install'
       }
