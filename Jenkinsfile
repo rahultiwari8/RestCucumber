@@ -19,7 +19,7 @@ pipeline {
 
     stage('Unit Test') {
       steps {
-        sh 'mvn test'
+        sh 'mvn -f RestAssured.Cucumber.Framework test'
       }
     }
 
