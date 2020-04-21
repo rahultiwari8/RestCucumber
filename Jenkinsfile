@@ -3,19 +3,19 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'cd RestAssured.Cucumber.Framework'
+        sh '/Users/rahultiwari/.jenkins/workspace/RestCucumber_master'
         sh 'pwd'
         sh 'mvn clean install'
       }
     }
-    
+
     stage('SonarQube Test') {
-            steps {
-              echo 'Initiating SonarQube test'
-              sh 'mvn sonar:sonar -Dsonar.host.url=http://localhost:9000 -Dlicense.skip=true'
-              echo 'SonarQube test Complete'
-            }
-          }
+      steps {
+        echo 'Initiating SonarQube test'
+        sh 'mvn sonar:sonar -Dsonar.host.url=http://localhost:9000 -Dlicense.skip=true'
+        echo 'SonarQube test Complete'
+      }
+    }
 
     stage('Unit Test') {
       steps {
@@ -31,18 +31,8 @@ pipeline {
           }
         }
 
-        
-        
-       
-        
-        
-
       }
-      
     }
-    
-    
 
   }
-  
 }
